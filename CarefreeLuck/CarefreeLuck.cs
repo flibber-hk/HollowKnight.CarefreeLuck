@@ -34,7 +34,7 @@ namespace CarefreeLuck
 
             while (cursor.TryGotoNext(MoveType.After, i => i.MatchCallOrCallvirt(typeof(UnityEngine.Random), "Range")))
             {
-                cursor.EmitDelegate<Func<int, int>>(x => 0);
+                cursor.EmitDelegate<Func<int, int>>(x => 1);
             }
         }
     }
